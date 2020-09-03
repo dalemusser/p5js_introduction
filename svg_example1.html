@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>save svg</title>
+    
+    <style type="text/css">
+		body{ background-color: white; }
+    </style>
+    <script src="p5.js"></script>
+    <script src="p5.svg.js"></script>
+  </head>
+  <body>
+    <script>
+		function setup() {
+			createCanvas(600, 200, SVG); // Create SVG Canvas
+			strokeWeight(2);
+			stroke('#ED225D');
+		}
+
+		function draw() {
+			var x = frameCount / 100;
+			var y = sin(x * PI * 2);
+			line(x * width, height * 0.5,
+				 x * width, y * height / 2 + height * 0.5);
+			if (frameCount > 100) {
+				noLoop();
+				save("wave.svg");
+			}
+		}
+
+    </script>
+    
+  </body>
+</html>
