@@ -53,7 +53,9 @@ Getting started with p5.js is at <https://p5js.org/get-started/>
 
 Examples using p5.js are at <https://p5js.org/examples/>
 
-The following image was created using the scripts shown in the html document below. It takes some time for the image to appear. This image requires a lot of computations to create it. If nothing appear immediately...wait. This is [The Mandelbrot Set example](https://p5js.org/examples/simulate-the-mandelbrot-set.html) in the examples provided on the p5.js web site. The following html is also available in [mandelbrot.html](mandelbrot.html)  in this repository.
+The following image was created using the scripts shown in the html document below. It takes some time for the image to appear. This image requires a lot of computations to create it. If nothing appear immediately...wait. This is [The Mandelbrot Set example](https://p5js.org/examples/simulate-the-mandelbrot-set.html) in the examples provided on the p5.js web site. The following html is also available in [mandelbrot.html](mandelbrot.html) in this repository.
+
+Notice the ```noLoop();``` in ```setup()```.  This causes is to call draw() once since the image is static. In the above example it needs to loop to draw based on moving the mouse.  Here is an another example that is animated are requires looping: <https://p5js.org/examples/simulate-flocking.html>
 
 ![mandelbrot](mandelbrot.png)
 
