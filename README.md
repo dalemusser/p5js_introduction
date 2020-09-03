@@ -43,7 +43,7 @@ The above is an HTML 5 document. The ```<script src="p5.js"></script>``` in the 
 
 In the body is a ```<script></script>``` block that contains two javascript functions: ```setup()``` and ```draw()```. ```setup()``` is called by code in p5.js to do the setup.  In the example code, it is where the canvas of 800 x 800 is created using ```createCanvas(800, 800)```.  The canvas is where the picture is drawn. The ```draw()``` function is where code is placed to draw the picture. In the case of the draw() function shown, the state of the mouse button is used  to set the fill color (for filled objects that are drawn after it is set). The location of the mouse cursor is used to draw 80 x 80 ellipses (circles) with the fill color.
 
-Open the .html file in a browser. Once it is loaded the browser will execute the javascript and draw a picture like the following. The html file is also available in ![example1.html](example1.html).
+Open the .html file in a browser. Once it is loaded the browser will execute the javascript and draw a picture like the following. The html file is also available in [example1.html](example1.html).
 
 ![example1.png](example1.png)
 
