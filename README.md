@@ -163,7 +163,7 @@ Notice the ```noLoop();``` in ```setup()```.  This causes is to call draw() once
 
 It is possible to draw an image and then save it to scalable vector graphics (SVG). Check out <https://github.com/zenozeng/p5.js-svg> and <https://editor.p5js.org/dannyrozin/sketches/r1djoVow7>. The javascript library to support saving svg files is p5.svg.js and is available at <https://github.com/zenozeng/p5.js-svg/blob/master/dist/p5.svg.js> and is also in the repository as [p5.svg.js](p5.svg.js).
 
-The following creates an svg of the drawn image. The svg file is named *wave.svg* and was put in the Downloads folder on my macOS computer when I loaded the page.
+The following creates an svg of the drawn image. The svg file is named *wave.svg* and was put in the **Downloads folder** on my macOS computer when I loaded the page.
 
 ```
 <!doctype html>
@@ -205,4 +205,7 @@ The following creates an svg of the drawn image. The svg file is named *wave.svg
 
 The following is a link to the svg image that was created: <a href='wave.svg' target='_blank'>wave.svg</a>.
 
+>&copy; 2020 [Dale Musser](https://dalemusser.com). All rights reserved.<br /><br />
+>This document is provided with the materials for an educational course and are meant for personal use by the student while participating in the course.
 
+![Dale Musser](https://github.com/dalemusser/common/blob/master/dalemusser/DaleMusserBWCircle200x.jpg?raw=true)
