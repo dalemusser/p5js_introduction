@@ -160,3 +160,49 @@ Notice the ```noLoop();``` in ```setup()```.  This causes is to call draw() once
 </html>
 
 ```
+
+It is possible to draw an image and then save it to scalable vector graphics (SVG). Check out <https://github.com/zenozeng/p5.js-svg> and <https://editor.p5js.org/dannyrozin/sketches/r1djoVow7>. The javascript library to support saving svg files is p5.svg.js and is available at <https://github.com/zenozeng/p5.js-svg/blob/master/dist/p5.svg.js> and is also in the repository as [p5.svg.js](p5.svg.js).
+
+The following creates an svg of the drawn image. The svg file is named *wave.svg* and was put in the Downloads folder on my macOS computer when I loaded the page.
+
+```
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>save svg</title>
+    
+    <style type="text/css">
+		body{ background-color: white; }
+    </style>
+    <script src="p5.js"></script>
+    <script src="p5.svg.js"></script>
+  </head>
+  <body>
+    <script>
+		function setup() {
+			createCanvas(600, 200, SVG); // Create SVG Canvas
+			strokeWeight(2);
+			stroke('#ED225D');
+		}
+
+		function draw() {
+			var x = frameCount / 100;
+			var y = sin(x * PI * 2);
+			line(x * width, height * 0.5,
+				 x * width, y * height / 2 + height * 0.5);
+			if (frameCount > 100) {
+				noLoop();
+				save("wave.svg");
+			}
+		}
+
+    </script>
+    
+  </body>
+</html>
+```
+
+The following is a link to the svg image that was created: <a href='wave.svg' target='_blank'>wave.svg</a>.
+
+
