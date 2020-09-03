@@ -43,7 +43,7 @@ The above is an HTML 5 document. The ```<script src="p5.js"></script>``` in the 
 
 In the body is a ```<script></script>``` block that contains two javascript functions: ```setup()``` and ```draw()```. ```setup()``` is called by code in p5.js to do the setup.  In the example code, it is where the canvas of 800 x 800 is created using ```createCanvas(800, 800)```.  The canvas is where the picture is drawn. The ```draw()``` function is where code is placed to draw the picture. In the case of the draw() function shown, the state of the mouse button is used  to set the fill color (for filled objects that are drawn after it is set). The location of the mouse cursor is used to draw 80 x 80 ellipses (circles) with the fill color.
 
-Open the .html file in a browser. Once it is loaded the browser will execute the javascript and draw a picture like the following. The html file is also available in <example1.html>.
+Open the .html file in a browser. Once it is loaded the browser will execute the javascript and draw a picture like the following. The html file is also available in ![example1.html](example1.html).
 
 ![example1.png](example1.png)
 
@@ -53,7 +53,7 @@ Getting started with p5.js is at <https://p5js.org/get-started/>
 
 Examples using p5.js are at <https://p5js.org/examples/>
 
-The following image was created using the scripts shown in the html document below. It takes some time for the image to appear. This image requires a lot of computations to create it. If nothing appear immediately...wait. This is [The Mandelbrot Set example](https://p5js.org/examples/simulate-the-mandelbrot-set.html) in the examples provided on the p5.js web site. The following html is also available in <mandelbrot.html>  in this repository.
+The following image was created using the scripts shown in the html document below. It takes some time for the image to appear. This image requires a lot of computations to create it. If nothing appear immediately...wait. This is [The Mandelbrot Set example](https://p5js.org/examples/simulate-the-mandelbrot-set.html) in the examples provided on the p5.js web site. The following html is also available in [mandelbrot.html](mandelbrot.html)  in this repository.
 
 ![mandelbrot](mandelbrot.png)
 
